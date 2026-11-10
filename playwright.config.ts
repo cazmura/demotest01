@@ -9,6 +9,7 @@ export default defineConfig({
   use: {
     baseURL: 'https://hotel-example-site.takeyaqa.dev',
     trace: 'on-first-retry',
+    screenshot: 'on',
   },
   projects: [
     {
