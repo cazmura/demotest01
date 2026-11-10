@@ -1,0 +1,26 @@
+{
+  "name": "demotest01",
+  "version": "1.0.0",
+  "description": "HOTEL PLANISPHERE site manual test cases automated with Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cazmura/demotest01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cazmura/demotest01/issues"
+  },
+  "homepage": "https://github.com/cazmura/demotest01#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6"
+  }
+}
