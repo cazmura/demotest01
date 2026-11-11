@@ -5,10 +5,12 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -20,6 +22,7 @@ jobs:
         run: npm ci
 
       - name: Install Playwright browsers
+        timeout-minutes: 5
         run: npx playwright install --with-deps chromium
 
       - name: Run Playwright tests
