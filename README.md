@@ -1,4 +1,4 @@
-# demotest01
+# hotel-planisphere-playwright-tests
 
 [HOTEL PLANISPHERE](https://hotel-example-site.takeyaqa.dev/ja/index.html) を対象にした手動テストケースと、その自動化（Playwright）のサンプルです。
 
@@ -59,3 +59,7 @@ npx playwright show-report
 ## CI での実行
 
 `.github/workflows/playwright.yml` に GitHub Actions 用のワークフローを用意しています。内部では `npm ci` → `npx playwright install --with-deps` → `npm test` という、どの CI サービスでも使える標準的な npm コマンドのみを呼び出しているため、GitHub Actions 以外（GitLab CI、CircleCI、Jenkins など）でも同じコマンドをそのまま移植して利用できます。
+
+## 改善版
+
+この実装を踏まえ、Page Object Modelの導入とCIパイプラインを強化したバージョンを別リポジトリで用意しています: [hotel-planisphere-playwright-tests-v2](https://github.com/cazmura/hotel-planisphere-playwright-tests-v2)
